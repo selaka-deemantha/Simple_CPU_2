@@ -1,2 +1,2 @@
-# Simple_CPU_2
-Simple_cpu_2 is a continuation of simple_cpu project. in this project load, store instructions and other instructions were implemented 
+# Simple_CPU
+ This project involves the development of a simple CPU capable of executing four basic instructions: ADD, AND, JUMP, and INCREMENT. The CPU is designed with an accumulator-based architecture.

@@ -3,13 +3,13 @@ module pc(
 	input rst,
 	input pc_inc,
 	input pc_load,
-	input [15:0] bus,
-	output [15:0] out);
+	input [5:0] bus,
+	output [5:0] out);
 	
-reg [15:0] pc_reg;
+reg [5:0] pc_reg;
 
 always @(posedge clk, posedge rst) begin
-	if(rst) pc_reg<=16'b0;
+	if(rst) pc_reg<=6'b0;
 	else if(pc_load) pc_reg<=bus;
 	else if(pc_inc) pc_reg<=pc_reg+1;
 end
